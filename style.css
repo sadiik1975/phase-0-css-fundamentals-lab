@@ -1,5 +1,68 @@
+/* Reset body margins */
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
+}
+
+/* Center the main header text */
+#main-header {
+  text-align: center;
+}
+
+/* Center images */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style navigation links */
+.navbar a {
+  padding: 10px;
+  background-color: grey;
+  color: white; /* Ensures text is visible on the grey background */
+  text-decoration: none; /* Optional: Removes underline from links */
+}
+
+/* Style image captions */
+figcaption {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Style paragraphs in featured property section */
+#featured-property p {
+  width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Layout for the details section */
+#details div {
+  float: left;
+  width: 25%;
+}
+
+/* Clean up the bottom divs */
+.bottom-divs {
+  background-color: lightgrey;
+  text-align: center;
+  width: 25%;
+}
+
+/* Center content in the footer with Flexbox */
+.footer {
+  display: flex;
+  justify-content: center; /* Horizontally centers content */
+  align-items: center;     /* Vertically centers content */
+  flex-wrap: wrap;         /* Allows items to wrap in small spaces */
+  background-color: red;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;             /* Ensures the footer takes full width */
+}
+
+/* Style footer paragraphs and links */
+.footer p, .footer a {
+  margin: 0 10px; /* Adds horizontal space around items */
+  color: white;  /* Ensures footer text and links are white */
 }
