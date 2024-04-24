@@ -1,4 +1,6 @@
-/* Reset body margins */
+
+
+/*Reset body margins */
 body {
   margin: 0;
 }
@@ -14,12 +16,24 @@ img {
   margin: 0 auto;
 }
 
-/* Style navigation links */
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center; /* Horizontally centers the links */
+  align-items: center;     /* Vertically centers the links */
+  width: 100%;             /* Ensures the navbar takes full width */
+}
+
 .navbar a {
   padding: 10px;
+  margin-right: 10px; /* Adds 10px margin to the right of each link */
   background-color: grey;
-  color: white; /* Ensures text is visible on the grey background */
-  text-decoration: none; /* Optional: Removes underline from links */
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:last-child {
+  margin-right: 0; /* Removes the margin from the last link */
 }
 
 /* Style image captions */
@@ -36,33 +50,52 @@ figcaption {
 }
 
 /* Layout for the details section */
-#details div {
-  float: left;
-  width: 25%;
+#details {
+    display: flex;
+    flex-wrap: wrap; /* Allows divs to wrap onto the next line on smaller screens */
+    justify-content: space-around; /* Distributes space around items evenly */
+    align-items: start; /* Aligns items at the start of their container */
 }
 
-/* Clean up the bottom divs */
-.bottom-divs {
-  background-color: lightgrey;
-  text-align: center;
-  width: 25%;
+details div {
+  flex: 1 1 25%; /* Flex-grow, Flex-shrink, and Flex-basis set to 25% */
+  margin: 10px; /* Adds some margin around each div */
+  min-width: 200px; /* Minimum width for each div to prevent them from becoming too narrow */
 }
 
-/* Center content in the footer with Flexbox */
+/* Layout for the details section within the footer */
+#details {
+    display: flex;
+    justify-content: center; /* Centers the divs horizontally */
+    align-items: center;     /* Aligns the divs vertically */
+    flex-wrap: wrap;         /* Allows divs to wrap onto the next line */
+    width: 100%;             /* Takes full width of the footer */
+    padding: 20px 0;         /* Adds padding above and below the section */
+}
+
+/* Center content in the footer with Flexbox and apply red background */
 .footer {
   display: flex;
   justify-content: center; /* Horizontally centers content */
   align-items: center;     /* Vertically centers content */
   flex-wrap: wrap;         /* Allows items to wrap in small spaces */
-  background-color: red;
-  color: white;
+  background-color: red;   /* Sets the background color to red */
+  color: white;            /* Sets text color to white for contrast */
   padding: 20px;
   margin-top: 20px;
   width: 100%;             /* Ensures the footer takes full width */
 }
 
-/* Style footer paragraphs and links */
-.footer p, .footer a {
-  margin: 0 10px; /* Adds horizontal space around items */
-  color: white;  /* Ensures footer text and links are white */
+#details div {
+    flex: 1 1 200px; /* Flex-grow, Flex-shrink, Flex-basis */
+    margin: 10px; /* Adds margin around each div */
+    text-align: center; /* Centers text within each div */
+    min-width: 200px; /* Ensures minimum width to prevent too much compression */
+}
+
+/* Optional: Adjustments for responsiveness */
+@media (max-width: 800px) {
+    #details div {
+        flex: 1 1 100%; /* Adjusts basis to 100% on smaller screens, causing one div per row */
+    }
 }
