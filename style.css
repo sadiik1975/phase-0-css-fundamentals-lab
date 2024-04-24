@@ -16,6 +16,7 @@ img {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 /* Navbar styles */
 .navbar {
   display: flex;
@@ -34,6 +35,22 @@ img {
 
 .navbar a:last-child {
   margin-right: 0; /* Removes the margin from the last link */
+=======
+/* Style navigation container */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centers navbar horizontally */
+}
+
+/* Style navigation links */
+.navbar a {
+  padding: 10px;
+  margin: 0 5px;
+  background-color: grey;
+  color: white; /* Ensures text is visible on the grey background */
+  text-decoration: none; /* Optional: Removes underline from links */
+  outline: none; /* Removes the outline */
+>>>>>>> 12da73144875e67ac76c4d029f056b1dfdb1a907
 }
 
 /* Style image captions */
@@ -51,6 +68,7 @@ figcaption {
 
 /* Layout for the details section */
 #details {
+<<<<<<< HEAD
     display: flex;
     flex-wrap: wrap; /* Allows divs to wrap onto the next line on smaller screens */
     justify-content: space-around; /* Distributes space around items evenly */
@@ -61,6 +79,21 @@ details div {
   flex: 1 1 25%; /* Flex-grow, Flex-shrink, and Flex-basis set to 25% */
   margin: 10px; /* Adds some margin around each div */
   min-width: 200px; /* Minimum width for each div to prevent them from becoming too narrow */
+=======
+  text-align: center; /* Center the section */
+}
+
+#details div {
+  display: inline-block; /* Allow divs to be positioned horizontally */
+  width: 25%;
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Clean up the bottom divs */
+.bottom-divs {
+ text-align: center;
+>>>>>>> 12da73144875e67ac76c4d029f056b1dfdb1a907
 }
 
 /* Layout for the details section within the footer */
@@ -79,13 +112,19 @@ details div {
   justify-content: center; /* Horizontally centers content */
   align-items: center;     /* Vertically centers content */
   flex-wrap: wrap;         /* Allows items to wrap in small spaces */
+<<<<<<< HEAD
   background-color: red;   /* Sets the background color to red */
   color: white;            /* Sets text color to white for contrast */
+=======
+  background-color: red;
+>>>>>>> 12da73144875e67ac76c4d029f056b1dfdb1a907
   padding: 20px;
   margin-top: 20px;
   width: 100%;             /* Ensures the footer takes full width */
+  text-align: center;      /* Centers content horizontally */
 }
 
+<<<<<<< HEAD
 #details div {
     flex: 1 1 200px; /* Flex-grow, Flex-shrink, Flex-basis */
     margin: 10px; /* Adds margin around each div */
@@ -99,3 +138,11 @@ details div {
         flex: 1 1 100%; /* Adjusts basis to 100% on smaller screens, causing one div per row */
     }
 }
+=======
+/* Style links in the red banner */
+#red-banner a {
+   text-decoration: none; /* Remove underline */
+  padding: 20px 40px; /* Add padding */
+  
+}
+>>>>>>> 12da73144875e67ac76c4d029f056b1dfdb1a907
